@@ -1,0 +1,481 @@
+.custom-filter-btn {
+    border-radius: 0.75rem;
+    border: 1px solid #ddd;
+    padding: 0.45rem 1rem;
+    font-weight: 500;
+    color: #212529;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.custom-filter-btn:hover,
+.custom-filter-btn:focus,
+.custom-filter-btn.show {
+    background-color: #ffe8a1 !important;
+    border-color: #ffc107;
+    color: #212529;
+}
+
+.placeholder-avatar {
+    width: 32px;
+    height: 32px;
+    background-color: #ccc;
+    display: inline-block;
+}
+
+.badge-dot::before {
+    content: '●';
+    font-size: 0.6rem;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.selected-row {
+    background-color: #fff9db !important;
+}
+
+/* Custom Yellow Button Style */
+.custom-filter-btn.btn.custom-yellow {
+    background-color: #fe9f43 !important;
+    border: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 0.75rem;
+    padding: 0.45rem 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+/* On focus, active, show states */
+.custom-filter-btn.btn.custom-yellow:hover,
+.custom-filter-btn.btn.custom-yellow:focus,
+.custom-filter-btn.btn.custom-yellow:active,
+.custom-filter-btn.btn.custom-yellow.show {
+    background-color: #fe9f43 !important;
+    color: white !important;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    border-radius: 0.75rem;
+    padding: 0.3rem 0;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Dropdown Items */
+.custom-dropdown-item {
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    color: #333;
+    transition: background 0.2s;
+}
+
+/* Item Hover Effect using your custom yellow */
+.custom-dropdown-item:hover {
+    background-color: #ffe1c2;
+    /* light tint of #fe9f43 */
+    color: #212529;
+}
+
+/* Active Item (selected) */
+.custom-dropdown-item.active,
+.custom-dropdown-item:active {
+    background-color: #fe9f43 !important;
+    color: white !important;
+}
+
+/* Hide default checkbox */
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+/* Custom checkmark box */
+.custom-checkbox .checkmark {
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border: 2px solid #fe9f43;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+/* On hover and focus - change border and add background tint */
+.custom-checkbox input[type="checkbox"]:hover+.checkmark,
+.custom-checkbox input[type="checkbox"]:focus+.checkmark {
+    border-color: #ffb366;
+    background: #fff7ed;
+    box-shadow: 0 0 0 2px #ffe3c2;
+}
+
+/* On checked - orange background */
+.custom-checkbox input[type="checkbox"]:checked+.checkmark {
+    background-color: #fe9f43;
+    border-color: #fe9f43;
+}
+
+/* Show tick mark */
+.custom-checkbox .checkmark::after {
+    content: '';
+    position: absolute;
+    display: none;
+    left: 5px;
+    top: 1px;
+    width: 4px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Show tick when checked */
+.custom-checkbox input[type="checkbox"]:checked+.checkmark::after {
+    display: block;
+}
+
+/* Page size dropdown */
+.custom-page-select {
+    width: 60px;
+    padding: 4px 8px;
+    font-size: 14px;
+    border-radius: 0.5rem;
+}
+
+/* Pagination arrows */
+.custom-page-arrow {
+    background: transparent;
+    border: none;
+    color: #6c757d;
+    font-size: 18px;
+    width: 32px;
+    height: 32px;
+    line-height: 1;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-page-arrow:hover {
+    color: #fe9f43;
+}
+
+/* Active circular page number */
+.custom-page-btn {
+    background-color: #fe9f43;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+}
+
+/* Keep it solid on hover — no flicker or style change */
+.custom-page-btn:hover,
+.custom-page-btn:focus,
+.custom-page-btn:active {
+    background-color: #fe9f43 !important;
+    color: white !important;
+    box-shadow: none;
+    outline: none;
+}
+
+/* Custom select for theme color and hover */
+.custom-select-theme {
+    border: 2px solid #ececec;
+    border-radius: 10px;
+    font-weight: 500;
+    color: #222;
+    box-shadow: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.custom-select-theme:focus,
+.custom-select-theme:hover {
+    border-color: #fe9f43;
+    box-shadow: 0 0 0 2px #ffe3c2;
+}
+
+.custom-select-theme option:checked,
+.custom-select-theme option[selected] {
+    background: #fe9f43 !important;
+    color: #fff !important;
+    font-weight: 700;
+}
+
+.custom-select-theme option:hover {
+    background: #ffe3c2 !important;
+    color: #fe9f43 !important;
+}
+
+/* Custom Checkbox Theme */
+.custom-checkbox input[type="checkbox"] {
+    accent-color: #fe9f43;
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    border: 2px solid #ececec;
+    background: #fff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.custom-checkbox input[type="checkbox"]:hover,
+.custom-checkbox input[type="checkbox"]:focus {
+    border-color: #fe9f43;
+    box-shadow: 0 0 0 2px #ffe3c2;
+}
+
+.custom-checkbox .checkmark {
+    border-radius: 5px;
+}
+
+.custom-checkbox input[type="checkbox"]:checked {
+    background: #fe9f43;
+    border-color: #fe9f43;
+}
+
+/* Custom Dropdown Menu for 3-dot action */
+.posorder-action-menu {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    min-width: 200px;
+    background: #fff;
+    border: 1.5px solid #ececec;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+    padding: 0.5rem 0;
+    animation: fadeIn 0.2s;
+}
+
+.posorder-action-menu .action-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 22px;
+    font-size: 1rem;
+    color: #222;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.18s, color 0.18s;
+}
+
+.posorder-action-menu .action-item:hover {
+    background: #fe9f43;
+    color: #fff;
+}
+
+.posorder-action-menu .action-item svg {
+    font-size: 1.1rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Show Payments Modal */
+.show-payments-modal .modal-content {
+    border-radius: 14px;
+}
+
+.show-payments-modal .modal-header {
+    border-bottom: none;
+    padding-bottom: 0.5rem;
+}
+
+.show-payments-modal .modal-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.show-payments-modal .table th {
+    background: #f3f4f6 !important;
+    color: #222 !important;
+    border: none;
+}
+
+.show-payments-modal .table td {
+    vertical-align: middle;
+    border: none;
+}
+
+.show-payments-modal .btn-outline-light {
+    border: none;
+    color: #222;
+    background: #f7f7f7;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.show-payments-modal .btn-outline-light:hover {
+    background: #fe9f43;
+    color: #fff;
+}
+
+.show-payments-modal .modal-body {
+    padding-bottom: 0.5rem;
+}
+
+.show-payments-modal .modal-header .btn-close {
+    background: #fff;
+    color: #ff3c3c;
+    font-size: 1.1rem;
+    opacity: 1;
+}
+
+.show-payments-modal .modal-header .btn-close:hover {
+    background: #ffe1c2;
+}
+
+.show-payments-modal .table-responsive {
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+/* Edit Payments Modal */
+.edit-payment-modal .modal-content {
+    border-radius: 14px;
+}
+
+.edit-payment-modal .modal-header {
+    border-bottom: none;
+    padding-bottom: 0.5rem;
+}
+
+.edit-payment-modal .modal-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.edit-payment-modal .form-label {
+    font-weight: 500;
+}
+
+.edit-payment-modal .input-group-text {
+    background: #f3f4f6;
+    border: 1px solid #e5e5e5;
+    color: #222;
+}
+
+.edit-payment-modal .btn-light.border {
+    background: #fff;
+    color: #222;
+    border: 1px solid #e5e5e5;
+    transition: background 0.2s, color 0.2s;
+}
+
+.edit-payment-modal .btn-light.border:hover {
+    background: #fe9f43;
+    color: #fff;
+}
+
+.edit-payment-modal .modal-footer .btn-light,
+.edit-payment-modal .modal-footer .btn-light:focus,
+.edit-payment-modal .modal-footer .btn-light:active {
+    background: #fff !important;
+    color: #222 !important;
+    border: 1.5px solid #e5e5e5 !important;
+}
+
+.edit-payment-modal .modal-footer .btn-light:hover {
+    background: #ffe1c2 !important;
+    color: #222 !important;
+}
+
+.edit-payment-modal .modal-footer .btn[style*='#FFA500'] {
+    background: #fe9f43 !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+.edit-payment-modal .modal-footer .btn[style*='#FFA500']:hover {
+    background: #ffb75e !important;
+    color: #fff !important;
+}
+
+.custom-filter-btn .dropdown-toggle {
+    background: #fff;
+    border: 2px solid #ececec;
+    border-radius: 16px;
+    color: #222;
+    font-weight: 500;
+    padding: 0.75rem 2.2rem 0.75rem 1.2rem;
+    box-shadow: none;
+    transition: border-color 0.2s, box-shadow 0.2s, color 0.2s, background 0.2s;
+}
+
+.custom-filter-btn .dropdown-toggle:hover,
+.custom-filter-btn .dropdown-toggle:focus {
+    border-color: #fe9f43;
+    background: #fff7ed;
+    color: #fe9f43;
+    box-shadow: 0 2px 8px 0 rgba(254, 159, 67, 0.08);
+}
+
+.custom-filter-btn .dropdown-toggle::after {
+    margin-left: 0.5rem;
+    color: #fe9f43;
+}
+
+.custom-dropdown-item.active,
+.custom-dropdown-item:active,
+.custom-dropdown-item:hover {
+    background: #fe9f43 !important;
+    color: #fff !important;
+    font-weight: 600;
+}
+
+/* Modal Button Styles */
+.btn-modal-cancel {
+    background: #17294d !important;
+    color: #fff !important;
+    border: none !important;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 0.5rem 2rem;
+    box-shadow: none;
+    transition: background 0.2s;
+}
+
+.btn-modal-cancel:hover,
+.btn-modal-cancel:focus {
+    background: #0e1a33 !important;
+    color: #fff !important;
+}
+
+.btn-modal-submit {
+    background: #fe9f43 !important;
+    color: #fff !important;
+    border: none !important;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 0.5rem 2rem;
+    box-shadow: none;
+    transition: background 0.2s;
+}
+
+.btn-modal-submit:hover,
+.btn-modal-submit:focus {
+    background: #ffb366 !important;
+    color: #fff !important;
+}

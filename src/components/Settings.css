@@ -1,0 +1,21 @@
+body {
+    background-color: #f8f9fa;
+}
+
+/* Yellow color for switches */
+.custom-switch:checked {
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+}
+
+/* Yellow color for radio buttons */
+.custom-radio:checked {
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+}
+
+/* Yellow color for checkboxes */
+.custom-check:checked {
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+}
